@@ -1,0 +1,39 @@
+body {
+    position: relative;
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    color: #4a5865;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav, footer {
+    text-align: center;
+    background-color: #362e2c35;
+    padding: 10px;
+}
+a {
+    color: #9f3501;
+    font-style: italic;
+    text-decoration: none;
+}
+a:hover {
+    color: #362e2c;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    background-color: #362e2c35;
+    padding: 10px;
+}
+p, article, ol, ul {
+    position: relative;
+    width: 65%;
+    line-height: 1.5;
+}
+figure {
+    position: relative;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
