@@ -5,12 +5,25 @@ body {
     margin-right: auto;
     width: 60%;
     color: #4a5865;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
-nav, footer {
-    text-align: center;
+nav {
+    display: flex;
+    align-items: center;
     background-color: #362e2c35;
     padding: 10px;
+}
+nav * {
+    display: inline;
+}
+footer * {
+    display: inline;
+}
+nav li {
+    margin: 20px;
+}
+footer li {
+    margin: 20px;
 }
 a {
     color: #9f3501;
