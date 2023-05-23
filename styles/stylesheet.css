@@ -40,6 +40,16 @@ nav li {
 footer li {
     margin: 30px;
 }
+img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 98%;
+    height: auto;
+    object-fit: contain;
+    padding: 1%;
+    background-color:#725655;
+}
 a {
     color: #9f3501;
     font-style: italic;
@@ -54,28 +64,20 @@ p, article, ol, ul {
     width: 75%;
     line-height: 1.5;
 }
+article {
+    font-style: italic;
+}
 figure {
     position: relative;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
-#about {
-    border-style: double;
-    border-width: 4px;
-    border-color: #725655;
-}
 .flower-power {
-    border-style: double;
-    border-width: 4px;
-    border-radius: 10px;
-    border-color: forestgreen;
+    background-color: forestgreen;
 }
 .volunteer {
-    border-style: dashed;
-    border-width: 2px;
-    border-radius: 20px;
-    border-color: #725655;
+    background-color: #9f3501;
 }
 h3, h4 {
     color: #cd890e;
