@@ -3,27 +3,42 @@ body {
     top: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 50%;
     color: #4a5865;
     font-family: sans-serif;
 }
+header {
+    text-align: center;
+    background-color: #362e2c35;
+    padding: 10px;
+}
 nav {
     display: flex;
-    align-items: center;
+    background-color: #362e2c35;
+    padding: 10px;
+}
+footer {
+    display: flex;
     background-color: #362e2c35;
     padding: 10px;
 }
 nav * {
     display: inline;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer * {
     display: inline;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav li {
-    margin: 20px;
+    margin: 30px;
 }
 footer li {
-    margin: 20px;
+    margin: 30px;
 }
 a {
     color: #9f3501;
@@ -34,14 +49,9 @@ a:hover {
     color: #362e2c;
     text-decoration: none;
 }
-h1 {
-    text-align: center;
-    background-color: #362e2c35;
-    padding: 10px;
-}
 p, article, ol, ul {
     position: relative;
-    width: 65%;
+    width: 75%;
     line-height: 1.5;
 }
 figure {
@@ -49,4 +59,24 @@ figure {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
+}
+#about {
+    border-style: double;
+    border-width: 4px;
+    border-color: #725655;
+}
+.flower-power {
+    border-style: double;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: forestgreen;
+}
+.volunteer {
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #725655;
+}
+h3, h4 {
+    color: #cd890e;
 }
