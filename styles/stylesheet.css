@@ -1,25 +1,38 @@
+* {
+    box-sizing: border-box;
+}
 body {
     position: relative;
     top: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    color: #4a5865;
-    font-family: sans-serif;
+    width: 75%;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #44753d25;
+}
+header {
+    padding: 35px 0 35px 0; 
+    text-align: center;
+    background-color: #44753d;
+}
+header h1 {
+    font-family: 'Sansita Swashed', 'Bradley Hand', cursive;
+    font-size: 3em;
+    color: #fed018;
+    z-index: 1;
+}
+.fa-solid {
+    opacity: .3;
 }
 h1 {
-    text-align: center;
-    background-color: #72565545;
-    padding: 25px;
-}
-h3, h4 {
-    color: #cd890e;
+    color: #44753d;
 }
 nav, footer {
     text-align: center;
     overflow: hidden;
-    background-color:#72565545;
-    padding: 15px 15px;
+    background-color: #fed01860;
+    padding: 15px 0 15px 0;
 }
 nav * {
     display: inline;
@@ -33,6 +46,34 @@ footer * {
     margin: 10px;
     text-decoration: none;
 }
+#main {
+    background-color: white;
+    float: left;
+    padding:20px 30px 30px 30px;
+    width: 60%;
+}
+#sidebar {
+    background-color: white;
+    float: right;
+    padding: 20px 30px 30px 30px;
+    width: 40%;
+}
+/* clear floated elements */
+.floated-elements::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* equal height columns */
+.floated-elements {
+    display: flex;
+    width: 100%;
+}
+#main #sidebar {
+    flex: 1;
+    padding: 30px;
+}
+
 img {
     position: relative;
     margin-left: auto;
@@ -55,7 +96,9 @@ a:hover {
 p, article, ol, ul {
     position: relative;
     max-width: 100%;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.75em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 article {
     font-style: italic;
