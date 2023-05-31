@@ -17,16 +17,19 @@ header {
     background-color: #44753d;
 }
 header h1 {
-    font-family: 'Sansita Swashed', 'Bradley Hand', cursive;
+    font-family: 'Arima', cursive;
+    font-weight: 500;
     font-size: 3em;
     color: #fed018;
-    z-index: 1;
 }
-.fa-solid {
+header h2 {
+    font-family: 'Arima', cursive;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #fed018;
+}
+header .fa-solid {
     opacity: .3;
-}
-h1 {
-    color: #44753d;
 }
 nav, footer {
     text-align: center;
@@ -74,6 +77,9 @@ footer * {
     padding: 30px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #44753d;
+} 
 img {
     position: relative;
     margin-left: auto;
@@ -83,6 +89,9 @@ img {
     object-fit: contain;
     padding: 1%;
     background-color:#725655;
+}
+.sidebar-image {
+    text-align: center;
 }
 a {
     color: #9f3501;
@@ -98,7 +107,7 @@ p, article, ol, ul {
     max-width: 100%;
     font-size: 1em;
     line-height: 1.75em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 article {
     font-style: italic;
@@ -109,9 +118,41 @@ figure {
     margin-left: auto;
     margin-right: auto;
 }
-.flower-power {
-    background-color: forestgreen;
+figcaption {
+    text-align: center;
 }
-.volunteer {
-    background-color: #9f3501;
+.main-text {
+    background-color: white;
+    padding: 60px;
+}
+.divider {
+    display: flex;
+}
+/* about me flex photos */
+.flex-photos {
+    padding: 0 35px 35px 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-birds img {
+    flex: 1 1 20%;
+}
+.flex-photos::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.rule {
+    border-top: 1px solid #44753d;
+    width: 40%;
+    margin: 20px;
+    position: relative;
+}
+.icon {
+    top: 3px;
+    position: relative;
+    color: #44753d;
 }

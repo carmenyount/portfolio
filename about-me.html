@@ -5,18 +5,24 @@
 	<meta charset="utf-8">
 	<title>About Me</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;500&family=Open+Sans:wght@300&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/c4607ab3a2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<header>
-		<h1>Hi, I'm Carmen</h1>
-		<nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>About Me</li>
-            </ul>
-        </nav>
+    <header>
+        <h1><i class="fa-solid fa-leaf fa-sm"></i>    Carmen Yount    <i class="fa-solid fa-leaf fa-flip-horizontal fa-sm"></i></h1>
+        <h2>Things I Do</h2>
 	</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>About Me</li>
+        </ul>
+    </nav>
+    <div class="main-text">
     <figure>
         <img src="images/CarmenYount_collage.jpg" height="450" alt="photocollage for Carmen Yount">
         <figcaption>Photo collage (made using Canva) for Carmen Yount</figcaption>
@@ -26,11 +32,21 @@
         <p>I'm old enough that I'm starting to feel a little bit like <a href="https://www.imdb.com/title/tt0109830/">Forrest Gump</a>. I'm too young to have experienced Watergate and the moon landing, but I remember where I was when I found out the Challenger exploded. I worked on a Y2K project. I was living in NYC on 9/11.</p>
         <p>I worked for The Associated Press for more than a decade as an election coordinator, compiling election data, populating state databases and building tabulation tables, and supervising state-level election night operations. The technology was really neat, and my peers were amazing... but it was <em>extremely</em> stressful.</p>
 	</section>
+    <div class="divider">
+        <div class="rule"></div>
+        <div class="icon"><i class="fa-solid fa-feather fa-lg"></i></div>
+        <div class="rule"></div>
+    </div>
 	<section><!-- Education -->
         <h3>Education</h3>
         <p>I graduated with an undergraduate degree in Classics from Reed College. Ten years after that, I left my full-time job to go back to school to study graphic design. Ten years after that, I spent a year at the University of Washington studying natural science illustration, and then a year at USC (online) getting a graduate certificate in GIS.</p>
         <p>Now I'm working on an MLIS through <a href="https://ischool.sjsu.edu">San Jose State University</a> (post-coordinate controlled vocabulary, anyone?), along with a certificate in front-end development (this program!).</p>
 	</section>
+    <div class="divider">
+        <div class="rule"></div>
+        <div class="icon"><i class="fa-solid fa-feather fa-lg"></i></div>
+        <div class="rule"></div>
+    </div>
     <section><!--volunteering -->
         <h3>Volunteering</h3>
         <p>I was freelancing as a graphic designer (and losing interest <em>fast</em>) when Covid shut everything down, including whatever work I had trickling in. (It was kind of a relief, actually.) Thankfully, I had been volunteering as a raptor docent at my local outdoor learning center for many years, and because that involves caring for live animals, I consistently had a place to go and something that needed to be done.</p>
@@ -43,11 +59,22 @@
             <img class="volunteer" src="images/040623_Arden.jpg" height="450" alt="photo of Arden, an unreleasable Red-tailed Hawk">
             <figcaption>Arden, unreleasable because of a poorly healed wrist fracture, April 2023</figcaption>
         </figure>
-        <p>I became a Montana Master Naturalist last year (thanks to Zoom)!</p>
+        <h3>Some of the other birds I have worked with:</h3>
+        <div class="flex-photos">
+            <img class="flex-birds" src="images/Alberta.jpg" width="20%" alt="great horned owl Alberta">
+            <img class="flex-birds" src="images/Oroville.jpg" width="20%" alt="barred owl Oroville">
+            <img class="flex-birds" src="images/ruby.jpg" width="20%" alt="barn owl Ruby">
+            <img class="flex-birds" src="images/Stan.jpg" width="20%"" alt="Harris's hawk Stan">
+        </div>
     </section>
-	<aside><!-- nature journaling -->
-        <h4>Nature Journaling as a Master Naturalist</h4>
-        <p>One focus of my master naturalist program was keeping a nature journal. I ended up hand-binding my journal and making a cover.</p>
+    <div class="divider">
+        <div class="rule"></div>
+        <div class="icon"><i class="fa-solid fa-feather fa-lg"></i></div>
+        <div class="rule"></div>
+    </div>
+    <aside><!-- nature journaling -->
+        <h3>Nature Journaling as a Master Naturalist</h3>
+        <p> I became a Montana Master Naturalist in 2022 (thanks to Zoom!). One focus of the program was keeping a nature journal. I created my own journal (and cover) based on the design of <a href="https://travelerscompanyusa.com/?gclid=CjwKCAjwvdajBhBEEiwAeMh1Uz1Y78cnOe46H-C6yRmb7jFeJz6oaj10YhoO-KJfQ8Gu_oUXcrbPXRoCNQMQAvD_BwE">Traveler's Notebooks.</a></p>
         <figure>
             <img src="images/DeciduousLeaves.jpg" height="450" alt="nature journal page featuring watercolor images of fall leaves">
             <figcaption>Nature journal page from Fall 2022.</figcaption>
@@ -61,6 +88,7 @@
             <p><a href="https://eric.ed.gov/?id=EJ1108035">Link to abstract here.</a> Full text available as a link from page.</p>
         </article>
 	</aside>
+    </div>
 	<footer>
         <ul>
             <li>&copy; Carmen Yount</li>
