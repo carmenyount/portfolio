@@ -120,6 +120,7 @@ figure {
 }
 figcaption {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .main-text {
     background-color: white;
@@ -130,10 +131,11 @@ figcaption {
 }
 /* about me flex photos */
 .flex-photos {
+    position:relative;
     padding: 0 35px 35px 35px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -145,6 +147,8 @@ figcaption {
     clear: both;
     display: table;
 }
+  
+/* horizontal rule with icon */
 .rule {
     border-top: 1px solid #44753d;
     width: 40%;
