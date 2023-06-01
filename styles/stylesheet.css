@@ -30,6 +30,10 @@ header h2 {
 }
 header .fa-solid {
     opacity: .3;
+    transition: rotate 3s;
+}
+header .fa-solid:hover {
+    rotate: 180deg;
 }
 nav, footer {
     text-align: center;
@@ -109,6 +113,10 @@ p, article, ol, ul {
     line-height: 1.75em;
     font-family: 'Open Sans', sans-serif;
 }
+ ul li:nth-child(2n + 1){
+    color: #32bd19;
+    font-weight: bold;
+}
 article {
     font-style: italic;
 }
@@ -129,34 +137,70 @@ figcaption {
 .divider {
     display: flex;
 }
+
 /* about me flex photos */
 .flex-photos {
     position:relative;
-    padding: 0 35px 35px 35px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+.flex-birds {
+    position:relative;
+    display: flex;
+    width: 200px;
+}
+
 .flex-birds img {
     flex: 1 1 20%;
 }
+
 .flex-photos::after {
     content: "";
     clear: both;
     display: table;
 }
+
+/* hover overlay */
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #44753d90;
+}
+.flex-birds:hover .overlay {
+    opacity: 1;
+}
+
+.flex-text {
+    position: absolute;
+    color: #fed018;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;  
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
   
 /* horizontal rule with icon */
 .rule {
     border-top: 1px solid #44753d;
-    width: 40%;
-    margin: 20px;
+    width: 50%;
+    margin: 50px 5px 50px 5px;
     position: relative;
 }
 .icon {
     top: 3px;
+    margin: 35px 5px 35px 5px;
     position: relative;
     color: #44753d;
+    vertical-align: center;
 }
