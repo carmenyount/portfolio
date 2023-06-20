@@ -22,52 +22,55 @@
 		<li>Contact</li>
 		</ul>
 	</nav>
-    <section class="main">
-      <!-- form, five types of inputs (text, textarea, email, number, radio) + styled with CSS --> 
-        <form class="flex-container" method="POST">
-            <div class="flex-item">
-                <label>First Name:
-                    <input type="text" name="contactFirstName">
-                </label>
-            </div>
-            <div class="flex-item">
-                <label>Last Name:
-                    <input type="text" name="contactLastName">
-                </label>
-            </div>
-            <div class="flex-item">
-                <label>Phone Number:
-                    <input type="tel" name="contactPhone">
-                </label>
-            </div>
-            <div class="flex-item">
-                <label>E-mail:
-                    <input type="email" name="contactEmail">
-                </label>
-            </div>
-            <div class="flex-item">
-                <fieldset>
-                    <legend>Preferred contact method:</legend>
-                    <label>
-                        <input type="radio" name="contactPref">
-                        Phone
+    <div class="contact-grid">
+        <section class="main">
+            <h2>Let's chat!</h2>
+            <p>I'm interested in what you have to say, and I'll get back to you as soon as I can.</p>
+        <!-- form, five types of inputs (text, textarea, email, number, radio) + styled with CSS --> 
+            <form class="flex-container" method="POST">
+                <div class="flex-item">
+                    <label>First Name:
+                        <input type="text" name="contactFirstName">
                     </label>
-                    <label>
-                        <input type="radio" name="contactPref">
-                        E-mail
+                </div>
+                <div class="flex-item">
+                    <label>Last Name:
+                        <input type="text" name="contactLastName">
                     </label>
-                </fieldset>
-            </div>
-            <div class="message">
-                <label>What can I do for you?
-                    <textarea name="contactNeed" rows="10" cols="50">I want information about...</textarea>
-                </label>
-            </div>
-            <div class="flex-item">
-                <input type="submit" value="Submit">
-            </div>
-            </form> 
-    </section>
+                </div>
+                <div class="flex-item">
+                    <label>Phone:
+                        <input type="tel" name="contactPhone">
+                    </label>
+                </div>
+                <div class="flex-item">
+                    <label>E-mail:
+                        <input type="email" name="contactEmail">
+                    </label>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <legend>Preferred contact method:</legend>
+                        <label>
+                            <input type="radio" name="contactPref">
+                            Phone
+                        </label>
+                        <label>
+                            <input type="radio" name="contactPref">
+                            E-mail
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="message">
+                    <label for="contactNeed">What can I do for you?</label><br>
+                        <textarea id="contactNeed" name="contactNeed" rows="10" cols="50">I want information about...</textarea>
+                </div>
+                <div class="flex-item">
+                    <input type="submit" value="Submit">
+                </div>
+                </form> 
+        </section>
+    </div>
     <footer>
         <ul>
             <li>&copy; Carmen Yount</li>

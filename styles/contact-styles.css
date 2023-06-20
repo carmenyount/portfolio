@@ -54,32 +54,36 @@ footer * {
     text-decoration: none;
 }
 .main {
+    grid-area: 1 / 2 / 2 / 3; /*row start / column start / row end / column end */
+}
+.contact-grid {
     background-color: white;
-    padding: 50px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    gap: 10px;
 }
 textarea {
     font-family: inherit;
+    padding: 5px;
+    margin: .5em;
 }
 .flex-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    gap: 20px;
     border-radius: 5px;
     padding: 1em;
+    align-items: center;
+    justify-content: space-between;
 }
 .flex-item {
     display: flex;
     padding: 15px;
-    justify-content: center;
 }
-label {
-    order: 1;
-    width: 30em;
-    padding-right: 1em;
-}
-input, textarea, radio {
-    order: 2;
-    flex: 1 1 auto;
+input {
+    padding: 5px;
 }
 .flex-container fieldset {
     border: 0;
