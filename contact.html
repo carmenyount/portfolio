@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio Contact</title>
+        <link rel="stylesheet" type="text/css" href="styles/contact-styles.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;500&family=Open+Sans:wght@300&display=swap');
+		  </style>
+        <script src="https://kit.fontawesome.com/c4607ab3a2.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-leaf fa-sm"></i>   Carmen Yount    <i class="fa-solid fa-leaf fa-flip-horizontal fa-sm"></i></h1>
+		<h2>Contact</h2>
+	</header>
+	<nav>
+		<ul>
+		<li><a href="index.html">Home</a></li>	
+		<li><a href="about-me.html">About</a></li>
+		<li>Contact</li>
+		</ul>
+	</nav>
+    <section class="main">
+      <!-- form, five types of inputs (text, textarea, email, number, radio) + styled with CSS --> 
+      <div class="flex-container">
+        <form method="POST">
+            <div class="flex-item">
+                <label>First Name:
+                    <input type="text" name="contactFirstName">
+                </label>
+            </div>
+            <div class="flex-item">
+                <label>Last Name:
+                    <input type="text" name="contactLastName">
+                </label>
+            </div>
+            <div class="flex-item">
+                <label>Phone Number:
+                    <input type="number" name="contactPhone">
+                </label>
+            </div>
+            <div classs="flex-item">
+                <label>E-mail:
+                    <input type="email" name="contactEmail">
+                </label>
+            </div>
+            <div class="flex-item">
+                <fieldset>
+                    <legend>Preferred contact method:</legend>
+                    <label>
+                        <input type="radio" name="contactPref">
+                        Phone
+                    </label>
+                    <label>
+                        <input type="radio" name="contactPref">
+                        E-mail
+                    </label>
+                </fieldset>
+            </div>
+            <div class="flex-item">
+                <label>What can I do for you?
+                    <textarea name="contactNeed" rows="10" cols="50">I want information about...</textarea>
+                </label>
+            </div>
+            <div class="flex-item">
+                <input type="submit" value="Submit">
+            </div>
+            </form> 
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>&copy; Carmen Yount</li>
+            <li><a href="mailto:carmen_yount@yahoo.com">e-mail me</a></li>
+        </ul> 
+	</footer>
+</body>
+</html>
