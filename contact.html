@@ -24,8 +24,7 @@
 	</nav>
     <section class="main">
       <!-- form, five types of inputs (text, textarea, email, number, radio) + styled with CSS --> 
-      <div class="flex-container">
-        <form method="POST">
+        <form class="flex-container" method="POST">
             <div class="flex-item">
                 <label>First Name:
                     <input type="text" name="contactFirstName">
@@ -38,10 +37,10 @@
             </div>
             <div class="flex-item">
                 <label>Phone Number:
-                    <input type="number" name="contactPhone">
+                    <input type="tel" name="contactPhone">
                 </label>
             </div>
-            <div classs="flex-item">
+            <div class="flex-item">
                 <label>E-mail:
                     <input type="email" name="contactEmail">
                 </label>
@@ -59,7 +58,7 @@
                     </label>
                 </fieldset>
             </div>
-            <div class="flex-item">
+            <div class="message">
                 <label>What can I do for you?
                     <textarea name="contactNeed" rows="10" cols="50">I want information about...</textarea>
                 </label>
@@ -68,7 +67,6 @@
                 <input type="submit" value="Submit">
             </div>
             </form> 
-        </div>
     </section>
     <footer>
         <ul>
