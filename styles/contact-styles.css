@@ -53,38 +53,52 @@ footer * {
     margin: 10px;
     text-decoration: none;
 }
-.main {
-    grid-area: 1 / 2 / 2 / 3; /*row start / column start / row end / column end */
-}
 .contact-grid {
     background-color: white;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
 }
+.main {
+    grid-area: 1 / 2 / 2 / 3; /*row start / column start / row end / column end */
+}
+
 textarea {
     font-family: inherit;
     padding: 5px;
     margin: .5em;
 }
 .flex-container {
+    list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* main axis: column, cross axis: row */
     flex-wrap: nowrap;
     gap: 20px;
     border-radius: 5px;
-    padding: 1em;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0;
 }
 .flex-item {
+    padding: 15px;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-item > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+.message {
+    align-items: flex-start;
     padding: 15px;
 }
 input {
     padding: 5px;
 }
-.flex-container fieldset {
+fieldset {
     border: 0;
+    text-align: center;
+}
+button {
+    justify-content: flex-end;
 }

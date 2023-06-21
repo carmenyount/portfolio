@@ -27,48 +27,53 @@
             <h2>Let's chat!</h2>
             <p>I'm interested in what you have to say, and I'll get back to you as soon as I can.</p>
         <!-- form, five types of inputs (text, textarea, email, number, radio) + styled with CSS --> 
-            <form class="flex-container" method="POST">
-                <div class="flex-item">
+        <form method="POST">
+            <ul class="flex-container">
+                <li class="flex-item">
                     <label>First Name:
                         <input type="text" name="contactFirstName">
                     </label>
-                </div>
-                <div class="flex-item">
+                </li>
+                <li class="flex-item">
                     <label>Last Name:
                         <input type="text" name="contactLastName">
                     </label>
-                </div>
-                <div class="flex-item">
+                </li>
+                <li class="flex-item">
                     <label>Phone:
                         <input type="tel" name="contactPhone">
                     </label>
-                </div>
-                <div class="flex-item">
+                </li>
+                <li class="flex-item">
                     <label>E-mail:
                         <input type="email" name="contactEmail">
                     </label>
-                </div>
-                <div class="flex-item">
+                </li>
+                <li class="flex-item">
                     <fieldset>
                         <legend>Preferred contact method:</legend>
-                        <label>
-                            <input type="radio" name="contactPref">
-                            Phone
-                        </label>
-                        <label>
-                            <input type="radio" name="contactPref">
-                            E-mail
-                        </label>
+                        <div class="wrap">
+                            <label>
+                                <input type="radio" id="rad1" name="rads">
+                                Phone
+                            </label>
+                            <label>
+                                <input type="radio" id="rad2" name="rads">
+                                E-mail
+                            </label>
+                        </div>
                     </fieldset>
-                </div>
-                <div class="message">
+                </li>
+                <li class="message">
                     <label for="contactNeed">What can I do for you?</label><br>
-                        <textarea id="contactNeed" name="contactNeed" rows="10" cols="50">I want information about...</textarea>
-                </div>
-                <div class="flex-item">
+                        <textarea id="contactNeed" name="contactNeed" rows="10" cols="35">I want information about...</textarea>
+                </li>
+                <li class="flex-item">
                     <input type="submit" value="Submit">
-                </div>
-                </form> 
+                </li>
+
+            </ul>
+        </form> 
         </section>
     </div>
     <footer>
